@@ -14,7 +14,7 @@ const loopendValue = document.getElementById("loopend-value");
 async function loadAudio() {
   try {
     // Load an audio file
-    const response = await fetch("rnb-lofi-melody-loop.wav");
+    const response = await fetch("sounds/space journey bass 1.wav");
     // Decode it
     buffer = await audioCtx.decodeAudioData(await response.arrayBuffer());
     const max = Math.floor(buffer.duration);
